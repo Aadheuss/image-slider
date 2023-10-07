@@ -163,13 +163,13 @@ const activateAllLinkBtn = function activateAllLinkBtn(links, images) {
 };
 
 const activateImgSlider = function activateImgSlider(target) {
-  const imgSLiderContainer = target;
+  const imgSliderContainer = target;
   const imgSlider = target.querySelector(".img-slider");
   const imgItems = target.querySelectorAll(".img-slider .slider-item");
   addSliderNavigation(imgSlider);
   activateSliderItems(imgSlider, 0);
-  imgSLiderContainer.appendChild(createSliderLinks(imageSlider));
-  const sliderLinkBtn = imgSLiderContainer.querySelectorAll(".slider-link-btn");
+  imgSliderContainer.appendChild(createSliderLinks(imgSlider));
+  const sliderLinkBtn = imgSliderContainer.querySelectorAll(".slider-link-btn");
   activateCurrentLinkView(sliderLinkBtn, 0);
   activateAllLinkBtn(sliderLinkBtn, imgItems);
   setInterval(viewNextImg.bind(this, imgSlider), 5000);
