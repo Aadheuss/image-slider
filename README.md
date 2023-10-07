@@ -40,14 +40,23 @@ Example:
 ### on your javascript file
 
 ```
-import activateImgSlider from 'aadheuss-image-slider/image-slider'.
-import 'aadheuss-image-slider/image-slider.css'.
+import activateImgSlider from 'aadheuss-image-slider/image-slider';
+import 'aadheuss-image-slider/image-slider.css';
 
 // Select the slider container
 const imageSlider = document.querySelector(".img-slider-container");
 
 // Use the function
 activateImgSlider(imageSlider);
+```
+
+### on the css file set the container width and height if needed
+
+```
+.img-slider-container {
+  width: 100vh;
+  height: 500px;
+}
 ```
 
 ### aadheuss-image-slider use the following css style

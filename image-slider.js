@@ -73,7 +73,6 @@ const getNextImg = function getPreviousImg(items) {
 };
 
 const changeActiveLinkBtn = function changeActiveLinkBtn(links, index) {
-  console.log(links, index);
   const btnToView = findItemToShow(links, index);
   const btnToHide = itemsToHide(links, index);
   hideAllItems(btnToHide);
@@ -173,4 +172,7 @@ const activateImgSlider = function activateImgSlider(target) {
   const sliderLinkBtn = imgSLiderContainer.querySelectorAll(".slider-link-btn");
   activateCurrentLinkView(sliderLinkBtn, 0);
   activateAllLinkBtn(sliderLinkBtn, imgItems);
+  setInterval(viewNextImg.bind(this, imgSlider), 5000);
 };
+
+export default activateImgSlider;
